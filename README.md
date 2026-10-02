@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Identitas Mahasiswa
+
+| Field | Isi |
+|-------|-----|
+| Nama | Sigit Ilham Pambudi |
+| NIM | A11.2023.15329 |
+| Kelas | Dev-02 |
+| Matakuliah | Bengkel Koding |
+
+## Tentang Proyek Poliklinik
+
+Proyek ini adalah aplikasi sistem informasi poliklinik berbasis Laravel 12 + Vite + Tailwind CSS + DaisyUI yang dikembangkan untuk memenuhi tugas mata kuliah Bengkel Koding. Fitur utama meliputi manajemen data poli, jadwal dokter, pendaftaran poli pasien, rekam medis/periksa, obat, dan detail resep.
+
+### Tabel Database yang Dikelola:
+- `users` (admin, dokter, pasien) → dilengkapi `id_poli` untuk hubungkan dengan poli
+- `poli` (data poliklinik/spesialisasi)
+- `jadwal_periksa` (jadwal praktek dokter per poli)
+- `daftar_poli` (pendaftaran pasien ke poli)
+- `periksa` (catatan rekam medis)
+- `obat` (master data obat)
+- `detail_periksa` (relasi n-n periksa & obat / resep)
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
