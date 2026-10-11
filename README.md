@@ -1,3 +1,8 @@
+# Nama    : Ahmad Raffi Muzacky
+# Nim     : A11.2023.15326
+# Kelas   : Dev-02
+# Matkul  : Bengkel Koding
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -6,28 +11,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-
-## Identitas Mahasiswa
-
-| Field | Isi |
-|-------|-----|
-| Nama | Sigit Ilham Pambudi |
-| NIM | A11.2023.15329 |
-| Kelas | Dev-02 |
-| Matakuliah | Bengkel Koding |
-
-## Tentang Proyek Poliklinik
-
-Proyek ini adalah aplikasi sistem informasi poliklinik berbasis Laravel 12 + Vite + Tailwind CSS + DaisyUI yang dikembangkan untuk memenuhi tugas mata kuliah Bengkel Koding. Fitur utama meliputi manajemen data poli, jadwal dokter, pendaftaran poli pasien, rekam medis/periksa, obat, dan detail resep.
-
-### Tabel Database yang Dikelola:
-- `users` (admin, dokter, pasien) → dilengkapi `id_poli` untuk hubungkan dengan poli
-- `poli` (data poliklinik/spesialisasi)
-- `jadwal_periksa` (jadwal praktek dokter per poli)
-- `daftar_poli` (pendaftaran pasien ke poli)
-- `periksa` (catatan rekam medis)
-- `obat` (master data obat)
-- `detail_periksa` (relasi n-n periksa & obat / resep)
 
 ## About Laravel
 
@@ -45,23 +28,24 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## Laravel Sponsors
 
-## Agentic Development
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### Premium Partners
 
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
 
 ## Contributing
 
