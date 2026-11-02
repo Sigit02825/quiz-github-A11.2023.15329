@@ -1,3 +1,4 @@
+
 <x-layouts.app title="Data Pasien">
 
     {{-- Header --}}

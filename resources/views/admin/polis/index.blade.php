@@ -6,11 +6,9 @@
             Data Poli
         </h2>
 
-        <a href="{{ route('polis.create') }}" class="inline-flex items-center gap-2 px-5 py-2.5
-                  bg-primary hover:bg-primary/90
-                  text-white text-sm font-semibold
-                  rounded-xl transition">
-            <i class="fas fa-plus text-xs"></i>
+        <a href="{{ route('polis.create') }}" class="btn bg-[#2d4499] hover:bg-[#1e2d6b] 
+                  text-white border-none rounded-lg px-5">
+            <i class="fas fa-plus"></i>
             Tambah Poli
         </a>
     </div>
@@ -24,31 +22,31 @@
     @endif
 
     {{-- Card --}}
-    <div class="card bg-base-100 shadow-md rounded-2 border border-slate-200">
+    <div class="card bg-base-100 shadow-md rounded-2 border">
         <div class="card-body p-0">
 
             <div class="overflow-x-auto">
-                <table class="table w-full">
+                <table class="table table-zebra w-full">
 
                     {{-- Head --}}
-                    <thead class="bg-slate-50 text-slate-600 uppercase text-xs tracking-wider">
+                    <thead class="bg-slate-100 text-slate-500 text-xs uppercase tracking-wider">
                         <tr>
-                            <th class="px-6 py-4 font-bold">Nama Poli</th>
-                            <th class="px-6 py-4 font-bold">Keterangan</th>
-                            <th class="px-6 py-4 text-right font-bold">Aksi</th>
+                            <th class="px-6 py-4">Nama Poli</th>
+                            <th class="px-6 py-4">Keterangan</th>
+                            <th class="px-6 py-4 text-right">Aksi</th>
                         </tr>
                     </thead>
 
                     {{-- Body --}}
-                    <tbody class="text-sm text-slate-700">
+                    <tbody>
                         @forelse($polis as $poli)
-                        <tr class="border-t border-slate-100 hover:bg-slate-50 transition">
+                        <tr class="hover:bg-slate-50 transition">
 
                             <td class="px-6 py-4 font-semibold text-slate-800">
                                 {{ $poli->nama_poli }}
                             </td>
 
-                            <td class="px-6 py-4 text-slate-600">
+                            <td class="px-6 py-4 text-slate-500">
                                 {{ $poli->keterangan }}
                             </td>
 
@@ -56,11 +54,9 @@
                                 <div class="flex justify-end gap-2">
 
                                     {{-- Edit --}}
-                                    <a href="{{ route('polis.edit', $poli->id) }}" class="inline-flex items-center gap-1 px-4 py-2
-                                              bg-amber-500 hover:bg-amber-600
-                                              text-white text-xs font-semibold
-                                              rounded-lg transition">
-                                        <i class="fas fa-pen text-xs"></i>
+                                    <a href="{{ route('polis.edit', $poli->id) }}" class="btn btn-sm bg-amber-500 hover:bg-amber-600 
+                                                  text-white border-none rounded-lg px-4">
+                                        <i class="fas fa-pen-to-square"></i>
                                         Edit
                                     </a>
 
@@ -69,11 +65,9 @@
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit"
-                                            onclick="return confirm('Yakin ingin menghapus poli ini?')" class="inline-flex items-center gap-1 px-4 py-2
-                                                   bg-red-500 hover:bg-red-600
-                                                   text-white text-xs font-semibold
-                                                   rounded-lg transition">
-                                            <i class="fas fa-trash text-xs"></i>
+                                            onclick="return confirm('Yakin ingin menghapus poli ini?')" class="btn btn-sm bg-red-500 hover:bg-red-600 
+                                                       text-white border-none rounded-lg px-4">
+                                            <i class="fas fa-trash"></i>
                                             Hapus
                                         </button>
                                     </form>

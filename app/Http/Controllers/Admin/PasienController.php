@@ -27,7 +27,7 @@ class PasienController extends Controller
             'alamat' => 'required|string',
             'no_ktp' => 'required|string|max:16|unique:users,no_ktp',
             'no_hp' => 'required|string|max:15',
-            'email' => 'required|string|unique:users,email',
+            'email' => 'required|string|email|unique:users,email',
             'password' => 'required|string|min:6',
         ]);
 
@@ -41,7 +41,7 @@ class PasienController extends Controller
             'role' => 'pasien',
         ]);
 
-        return redirect()->route('pasien.index')->with('message', 'Data Pasien berhasil di Tambah')->with('type', 'success');
+        return redirect()->route('pasien.index')->with('message', 'Data Pasien berhasil di Tambah>')->with('type', 'success');
     }
 
     public function edit(User $pasien)
@@ -56,8 +56,8 @@ class PasienController extends Controller
             'alamat' => 'required|string',
             'no_ktp' => 'required|string|max:16|unique:users,no_ktp,' . $pasien->id,
             'no_hp' => 'required|string|max:15',
-            'email' => 'required|string|unique:users,email,' . $pasien->id,
-            'password' => 'nullable|string|min:6',
+            'email' => 'required|string|email|unique:users,email,' . $pasien->id,
+            'password' => 'required|string|min:6',
         ]);
 
         $updateData = [
@@ -65,25 +65,27 @@ class PasienController extends Controller
             'alamat' => $request->alamat,
             'no_ktp' => $request->no_ktp,
             'no_hp' => $request->no_hp,
-            'email' => $request->email
+            'email' => $request->email,
         ];
 
         if ($request->filled('password')) {
-            $updateData['password'] = Hash::make($request->password);
+            $pasien->password = Hash::make($request->password);
         }
 
         $pasien->update($updateData);
 
-        return redirect()->route('pasien.index')
-            ->with('message', 'Data Pasien Berhasil di Update')
+        return redirect()
+            ->route('pasien.index')
+            ->with('message', 'Data Pasien berhasil di Ubah>')
             ->with('type', 'success');
     }
 
     public function destroy(User $pasien)
     {
         $pasien->delete();
-        return redirect()->route('pasien.index')
-            ->with('message', 'Data Pasien Berhasil Di Hapus')
+        return redirect()
+            ->route('pasien.index')
+            ->with('message', 'Data Pasien berhasil dihapus')
             ->with('type', 'success');
     }
 }
