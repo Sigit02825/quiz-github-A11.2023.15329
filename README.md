@@ -4,13 +4,13 @@
 # Matkul  : Bengkel Koding
 
 ### Dokumentasi Tugas Pertemuan 5
-1. **Daftar Poli (Pasien)** - Screenshot halaman daftar poli yang dapat diakses oleh pasien.
+1. **Daftar Poli (Pasien)** — Screenshot halaman daftar poli yang dapat diakses oleh pasien.
 ![Daftar Poli](public/images/documentation/daftar-poli.png)
 
-2. **Periksa Pasien (Dokter)** - Screenshot halaman pemeriksaan pasien yang digunakan oleh dokter.
+2. **Periksa Pasien (Dokter)** — Screenshot halaman pemeriksaan pasien yang digunakan oleh dokter.
 ![Periksa Pasien](public/images/documentation/periksa-pasien.png)
 
-3. **Riwayat Pasien (Dokter)** - Screenshot halaman riwayat pemeriksaan pasien yang dapat diakses oleh dokter.
+3. **Riwayat Pasien (Dokter)** — Screenshot halaman riwayat pemeriksaan pasien yang dapat diakses oleh dokter.
 ![Riwayat Pasien](public/images/documentation/riwayat-pasien.png)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
