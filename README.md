@@ -2,7 +2,6 @@
 # Nim     : A11.2023.15329
 # Kelas   : Dev-02
 # Matkul  : Bengkel Koding
-# Link Repo Github : https://github.com/Sigit02825/quiz-github-A11.2023.15329.git
 
 ### Dokumentasi Tugas Pertemuan 5
 1. **Daftar Poli (Pasien)** - Screenshot halaman daftar poli yang dapat diakses oleh pasien.
