@@ -2,6 +2,12 @@
 # Nim     : A11.2023.15329
 # Kelas   : Dev-02
 # Matkul  : Bengkel Koding
+# Link Repo Github : https://github.com/Sigit02825/quiz-github-A11.2023.15329.git
+
+### Dokumentasi Tugas Pertemuan 5
+1. **Daftar Poli (Pasien)** - Screenshot halaman daftar poli yang dapat diakses oleh pasien.
+2. **Periksa Pasien (Dokter)** - Screenshot halaman pemeriksaan pasien yang digunakan oleh dokter.
+3. **Riwayat Pasien (Dokter)** - Screenshot halaman riwayat pemeriksaan pasien yang dapat diakses oleh dokter.
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
